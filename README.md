@@ -2,17 +2,23 @@
 Copyright (C) 2016, Ayan Chakrabarti <ayanc@ttic.edu>
 
 This is a reference implementation of the algorithm described in the
-paper, ["**A Neural Approach to Blind Motion Deblurring**"
-*arXiv:1603.04771 [cs.CV]*](http://arxiv.org/abs/1603.04771). It is
-being made available for non-commercial research use only. If you find
-this code useful in your research, please consider citing the paper.
+paper:
 
-Contact <ayanc@ttic.edu> with any questions.
+Ayan Chakrabarti, "**A Neural Approach to Blind Motion Deblurring**", 
+Proc. of the European Conference on Computer Vision (ECCV) 2016.
+[arXiv](http://arxiv.org/abs/1603.04771) 
+
+This implementation is being made available for non-commercial research
+use only. If you find this code useful in your research, please consider 
+citing the above paper.
+
+Please see the [project page](http://www.ttic.edu/chakrabarti/ndeblur/) 
+and contact <ayanc@ttic.edu> with any questions.
 
 ### Requirements
 
 1. You will need to download the trained neural model, available as
-   MAT file [here](http://www.ttic.edu/chakrabarti/ndeblur/model.mat).
+   MAT file at the [project page](http://www.ttic.edu/chakrabarti/ndeblur/).
    
 2. This implementation requires a modern CUDA-capable GPU (it has been
    tested on an NVIDIA Titan X), and a recent version of MATLAB's
@@ -49,4 +55,5 @@ MATLAB, for more information):
 >>> out_final = ndeblur2(blurry_input,out_navg); % Compute final output
 ```
 
-
+Please see the `training/` sub-directory if you wish to train your
+own model.
