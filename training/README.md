@@ -70,6 +70,8 @@ deblurring code. Please read through the following steps, individual
 7. Once you're done training, create a model .mat file by saving the
    following variables:
 
-   `load([wname '.mat'],'net','best_wts');` 
-   `wts = best_wts;`
-   `save('-mat','model.mat','tfm','net','wts');`
+```MATLAB
+>>> load([wname '.mat'],'net','best_wts');
+>>> wts = best_wts;
+>>> save('-mat','model.mat','tfm','net','wts');
+```
