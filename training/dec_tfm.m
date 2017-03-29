@@ -1,7 +1,7 @@
 % tfm.inp = dec_tfm(tfm.inp,patches,kernels)
 %   patches should be size A x A x N,
 %   kernels should be size K x K x M
-%   such that A+K-1 = 65
+%   such that A-K+1 = 65
 % --Ayan Chakrabarti <ayanc@ttic.edu>
 function dec = dec_tfm(inputs,pdata,kernels)
 
